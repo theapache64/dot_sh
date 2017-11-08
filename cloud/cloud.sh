@@ -55,7 +55,10 @@ sudo mv "tomcat-users.xml" /opt/tomcat/conf/
 #Enabling external access
 sudo rm /opt/tomcat/webapps/manager/META-INF/context.xml
 sudo rm /opt/tomcat/webapps/host-manager/META-INF/context.xml
-wget 
+wget https://raw.githubusercontent.com/theapache64/dot_sh/master/cloud/context.xml
+sudo cp context.xml /opt/tomcat/webapps/manager/META-INF/
+sudo cp context.xml /opt/tomcat/webapps/host-manager/META-INF/
+sudo systemctl restart tomcat
 
 
 echo "###############################################"
