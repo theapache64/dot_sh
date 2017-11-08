@@ -38,10 +38,9 @@ sudo apt-get install indicator-netspeed
 
 echo "Installing phpstorm"
 #installing phpstorm
-wget https://download.jetbrains.com/webide/PhpStorm-2017.2.4.tar.gz
-tar -xvf PhpStorm-2017.2.4.tar.gz
-sudo mv PhpStorm-2017.2.4 phpstorm
-sudo mv phpstorm /opt/
+wget https://download.jetbrains.com/webide/PhpStorm-2017.2.4.tar.gz -O storm.tar.gz
+tar -xvf storm.tar.gz
+sudo mv storm /opt/
 
 
 echo "Installing google chrome"
