@@ -60,6 +60,9 @@ sudo cp context.xml /opt/tomcat/webapps/manager/META-INF/
 sudo cp context.xml /opt/tomcat/webapps/host-manager/META-INF/
 sudo systemctl restart tomcat
 
+#Htop
+sudo apt-get install htop
+
 
 echo "###############################################"
 echo "Installation finished"
