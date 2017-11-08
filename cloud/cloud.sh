@@ -39,6 +39,22 @@ sudo chgrp -R tomcat /opt/tomcat
 sudo chmod -R g+r conf
 sudo chmod g+x conf
 sudo chown -R tomcat webapps/ work/ temp/ logs/
+wget "https://raw.githubusercontent.com/theapache64/dot_sh/master/cloud/tomcat.service" -O tomcat.service
+sudo mv tomcat.service /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl start tomcat
+sudo systemctl status tomcat
+sudo ufw allow 8080
+sudo systemctl enable tomcat
+
+# Configure Tomcat Web Management Interface
+wget "https://raw.githubusercontent.com/theapache64/dot_sh/master/cloud/tomcat-users.xml" -O "tomcat-users.xml"
+sudo rm /opt/tomcat/conf/tomcat-users.xml
+sudo mv "tomcat-users.xml" /opt/tomcat/conf/
+
+#Enabling external access
+sudo rm /opt/tomcat/webapps/manager/META-INF/context.xml
+sudo rm /opt/tomcat/webapps/host-manager/META-INF/context.xml
 wget 
 
 
