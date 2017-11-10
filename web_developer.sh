@@ -40,7 +40,8 @@ echo "Installing phpstorm"
 #installing phpstorm
 wget https://download.jetbrains.com/webide/PhpStorm-2017.2.4.tar.gz -O storm.tar.gz
 tar -xvf storm.tar.gz
-sudo mv storm /opt/
+sudo mv PhpStorm-* /opt/
+sudo sh /opt/PhpStorm-*/bin/phpstorm.sh
 
 
 echo "Installing google chrome"
@@ -49,7 +50,7 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 sudo apt-get install -f
 
-
+sudo dpkg --configure -a
 
 
 echo "###############################################"
