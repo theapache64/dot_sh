@@ -18,7 +18,7 @@ echo "Installing mysql"
 sudo apt-get -y install mysql-server
 
 echo "Installing php"
-sudo apt-get -y install phpmyadmin
+sudo apt-get install phpmyadmin
 
 echo "Installing sublime"
 sudo apt-get -y install sublime-text-installer
