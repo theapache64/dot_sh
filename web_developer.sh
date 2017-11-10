@@ -14,29 +14,8 @@ sudo add-apt-repository ppa:nilarimogard/webupd8
 
 sudo apt-get -y --force-yes update
 
-echo "Installing mysql"
-sudo apt-get -y install mysql-server
-
-
-echo "Installing sublime"
-sudo apt-get -y install sublime-text-installer
-
-echo "Installing java"
-sudo apt-get -y install oracle-java8-installer oracle-java8-set-default
-
-echo "Installing putty"
-sudo apt-get -y install putty
-
-echo "Installing filezilla"
-sudo apt-get -y install filezilla
-
-echo "Installing netspeed indicator"
-sudo apt-get install indicator-netspeed
-
-echo "Installing OpenSSH"
-sudo apt-get install openssh-client
-sudo apt-get install openssh-server
-
+echo "Installing..."
+sudo apt-get -y install mysql-server sublime-text-installer oracle-java8-installer oracle-java8-set-default putty openssh-server openssh-client filezilla indicator-netspeed phpmyadmin
 
 echo "Installing phpstorm"
 #installing phpstorm
@@ -52,10 +31,6 @@ echo "Installing google chrome"
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 sudo apt-get install -f
-
-
-echo "Installing php"
-sudo apt-get install phpmyadmin
 
 echo "###############################################"
 echo "Installation finished"
