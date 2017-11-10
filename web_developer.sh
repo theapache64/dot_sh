@@ -17,8 +17,6 @@ sudo apt-get -y --force-yes update
 echo "Installing mysql"
 sudo apt-get -y install mysql-server
 
-echo "Installing php"
-sudo apt-get install phpmyadmin
 
 echo "Installing sublime"
 sudo apt-get -y install sublime-text-installer
@@ -55,8 +53,9 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 sudo apt-get install -f
 
-sudo dpkg --configure -a
 
+echo "Installing php"
+sudo apt-get install phpmyadmin
 
 echo "###############################################"
 echo "Installation finished"
