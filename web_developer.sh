@@ -35,6 +35,10 @@ sudo apt-get -y install filezilla
 echo "Installing netspeed indicator"
 sudo apt-get install indicator-netspeed
 
+echo "Installing OpenSSH"
+sudo apt-get install openssh-client
+sudo apt-get install openssh-server
+
 
 echo "Installing phpstorm"
 #installing phpstorm
