@@ -46,7 +46,8 @@ wget https://download.jetbrains.com/webide/PhpStorm-2017.2.4.tar.gz -O storm.tar
 tar -xvf storm.tar.gz
 sudo mv PhpStorm-* /opt/
 sudo sh /opt/PhpStorm-*/bin/phpstorm.sh
-
+#Disabling licence check
+echo '0.0.0.0 accounts.jetbrains.com' | sudo tee --append /etc/hosts > /dev/null
 
 echo "Installing google chrome"
 # google chrome
