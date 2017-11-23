@@ -15,7 +15,7 @@ sudo add-apt-repository ppa:nilarimogard/webupd8
 sudo apt-get -y --force-yes update
 
 echo "Installing..."
-sudo apt-get -y install mysql-server sublime-text-installer oracle-java8-installer oracle-java8-set-default putty openssh-server openssh-client filezilla indicator-netspeed phpmyadmin
+sudo apt-get -y install mysql-server sublime-text-installer putty openssh-server openssh-client filezilla indicator-netspeed phpmyadmin
 
 echo "Installing phpstorm"
 #installing phpstorm
